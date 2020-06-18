@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "967fe077289e31c15ccab09aff088234",
+    "revision": "94bae77d8537874851245c57899be15d",
     "url": "/roll-dice/index.html"
   },
   {
-    "revision": "2809d63604fb3fb4364d",
+    "revision": "7af82d2709331f5a8daf",
     "url": "/roll-dice/static/css/main.87510494.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/roll-dice/static/js/2.633b68ab.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2809d63604fb3fb4364d",
-    "url": "/roll-dice/static/js/main.ccb35adf.chunk.js"
+    "revision": "7af82d2709331f5a8daf",
+    "url": "/roll-dice/static/js/main.c98f84e0.chunk.js"
   },
   {
     "revision": "fc8621c203151ba7be01",
