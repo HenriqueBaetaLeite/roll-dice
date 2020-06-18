@@ -14,7 +14,17 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Roll your dice!</h1>
-        <InputChoose />
+        <InputChoose />        
+        <footer>
+          <p>Desenvolvido por &nbsp;
+            <a href="https://www.linkedin.com/in/henrique-ba%C3%AAta-leite-785a4b15a/"
+              target="_blank"
+              rel="noreferrer nofollow"
+            >
+              Henrique Baêta Leite
+            </a>
+          </p>
+        </footer>
       </div>
     );
   }
