@@ -1,0 +1,54 @@
+.dice-container {
+  background: linear-gradient(rgb(66, 40, 66), rgb(218, 96, 218), rgb(87, 3, 87));
+  border: 2px solid black;
+  border-radius: 20px;
+  color: white;
+  height: 290px;
+  margin: 0 auto;
+  padding: 5px;
+  width: 200px;
+  box-shadow: -1px 1px 6px black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.selectInput {
+  box-shadow: 1px 1px 2px black;
+  outline: none;
+  margin-top: 15px;
+  width: 35%;
+}
+
+.buttonRoll {
+  outline: none;
+  background-color: rgb(31, 241, 76);
+  height: 25px;
+  border-radius: 10px 0 10px;
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  font-weight: 600;
+  box-shadow: 1px 1px 5px black;
+  margin-top: 5px;
+  transition: all 0.5s;
+}
+
+.buttonRoll:hover {
+  background-color: rgb(107, 235, 90);
+  box-shadow: 1px -1px 5px black;
+  
+}
+
+.titleDice {
+  text-shadow: 1px 1px 4px black;
+}
+
+.titleRolled {
+  font-size: 50px;
+  text-shadow: 1px 1px 4px black;
+}
