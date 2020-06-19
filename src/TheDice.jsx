@@ -14,6 +14,7 @@ export default class TheDice extends Component {
   }
 
   async rollDice() {
+    this.setState((prevState) => ({ ...prevState, numberDice: undefined }));
     const number = Math.round(Math.random() * (this.props.diceSide - 1) + 1);
     this.setState((prevState) => ({ ...prevState, imgDice: <img src={D20} width="70px" alt="dice GIF" /> }));
     setTimeout(() => {
