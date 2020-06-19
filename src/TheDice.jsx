@@ -8,18 +8,21 @@ export default class TheDice extends Component {
     this.state = {
       numberDice: undefined,
       imgDice: undefined,
+      disableButton: false,
     };
 
     this.rollDice = this.rollDice.bind(this);
   }
 
   async rollDice() {
-    this.setState((prevState) => ({ ...prevState, numberDice: undefined }));
+    this.setState((prevState) => ({ ...prevState, disableButton: true, numberDice: undefined }));
     const number = Math.round(Math.random() * (this.props.diceSide - 1) + 1);
-    this.setState((prevState) => ({ ...prevState, imgDice: <img src={D20} width="70px" alt="dice GIF" /> }));
+    this.setState((prevState) => ({
+      ...prevState,
+      imgDice: <img src={D20} width="70px" alt="dice GIF" />,
+    }));
     setTimeout(() => {
-      this.setState(() => ({ imgDice: undefined }));
-      this.setState(() => ({ numberDice: number }));
+      this.setState(() => ({ imgDice: undefined, numberDice: number, disableButton: false }));
     }, 1800);
     setTimeout(() => {
       this.setState((prevState) => ({ ...prevState, numberDice: undefined }));
@@ -28,11 +31,16 @@ export default class TheDice extends Component {
 
   render() {
     const { diceSide } = this.props;
-    const { imgDice, numberDice } = this.state;
+    const { imgDice, numberDice, disableButton } = this.state;
     return (
       <div>
         <h1 className="titleDice">D{diceSide}</h1>
-        <button className="buttonRoll" type="button" onClick={this.rollDice}>
+        <button
+          disabled={disableButton}
+          className="buttonRoll"
+          type="button"
+          onClick={this.rollDice}
+        >
           Roll
         </button>
         <h1 className="titleRolled">
