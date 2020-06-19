@@ -5,6 +5,23 @@
   height: 100vh;
 }
 
+.dice {
+  margin-top: 50px;
+}
+
+footer {
+  margin-top: 50px;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-
 import './App.css';
 import InputChoose from './InputChoose';
+import Footer from './Footer';
 
 class App extends Component {
   constructor(props) {
@@ -15,16 +15,7 @@ class App extends Component {
       <div className="App">
         <h1>Roll your dice!</h1>
         <InputChoose />        
-        <footer>
-          <p>Desenvolvido por &nbsp;
-            <a href="https://www.linkedin.com/in/henrique-ba%C3%AAta-leite-785a4b15a/"
-              target="_blank"
-              rel="noreferrer nofollow"
-            >
-              Henrique Baêta Leite
-            </a>
-          </p>
-        </footer>
+        <Footer />
       </div>
     );
   }
