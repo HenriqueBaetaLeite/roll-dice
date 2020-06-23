@@ -18,6 +18,7 @@ export default class InputChoose extends Component {
   }
 
   render() {
+    const { diceRolled } = this.state;
     return (
       <div className="dice-container">
         <form className="form">
@@ -37,7 +38,7 @@ export default class InputChoose extends Component {
             <option value="100">D100</option>
           </select>
         </form>
-        <TheDice diceSide={this.state.diceRolled} className="dice" />
+        <TheDice diceSide={diceRolled} className="dice" />
       </div>
     );
   }

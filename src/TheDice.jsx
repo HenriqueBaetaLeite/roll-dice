@@ -21,10 +21,10 @@ export default class TheDice extends Component {
       ...prevState,
       imgDice: <img src={D20} width="70px" alt="dice GIF" />,
     }));
-    setTimeout(() => {
+    await setTimeout(() => {
       this.setState(() => ({ imgDice: undefined, numberDice: number, disableButton: false }));
     }, 1800);
-    setTimeout(() => {
+    await setTimeout(() => {
       this.setState((prevState) => ({ ...prevState, numberDice: undefined }));
     }, 10000);
   }
