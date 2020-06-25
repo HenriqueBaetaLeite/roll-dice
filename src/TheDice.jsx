@@ -10,22 +10,21 @@ export default class TheDice extends Component {
       imgDice: undefined,
       disableButton: false,
     };
+    this.time = '';
 
     this.rollDice = this.rollDice.bind(this);
   }
 
-  async rollDice() {
-    this.setState((prevState) => ({ ...prevState, disableButton: true, numberDice: undefined }));
+  rollDice() {
+    clearTimeout(this.time);
     const number = Math.round(Math.random() * (this.props.diceSide - 1) + 1);
-    this.setState((prevState) => ({
-      ...prevState,
-      imgDice: <img src={D20} width="70px" alt="dice GIF" />,
-    }));
-    await setTimeout(() => {
-      this.setState(() => ({ imgDice: undefined, numberDice: number, disableButton: false }));
+    this.setState((prevState) => ({ ...prevState, disableButton: true, numberDice: undefined }));
+    this.setState({ imgDice: <img src={D20} width="70px" alt="dice GIF" /> });
+    setTimeout(() => {
+      this.setState({ imgDice: undefined, numberDice: number, disableButton: false });
     }, 1800);
-    await setTimeout(() => {
-      this.setState((prevState) => ({ ...prevState, numberDice: undefined }));
+    this.time = setTimeout(() => {
+      this.setState({ numberDice: undefined });
     }, 10000);
   }
 
