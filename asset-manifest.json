@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/roll-dice/static/css/main.d84f101d.chunk.css",
-    "main.js": "/roll-dice/static/js/main.3c169280.chunk.js",
-    "main.js.map": "/roll-dice/static/js/main.3c169280.chunk.js.map",
+    "main.js": "/roll-dice/static/js/main.9e2a0db7.chunk.js",
+    "main.js.map": "/roll-dice/static/js/main.9e2a0db7.chunk.js.map",
     "runtime-main.js": "/roll-dice/static/js/runtime-main.41b538a6.js",
     "runtime-main.js.map": "/roll-dice/static/js/runtime-main.41b538a6.js.map",
     "static/js/2.e46b3555.chunk.js": "/roll-dice/static/js/2.e46b3555.chunk.js",
     "static/js/2.e46b3555.chunk.js.map": "/roll-dice/static/js/2.e46b3555.chunk.js.map",
     "index.html": "/roll-dice/index.html",
-    "precache-manifest.2c86a3a7ca9866340b6b0e68085691c8.js": "/roll-dice/precache-manifest.2c86a3a7ca9866340b6b0e68085691c8.js",
+    "precache-manifest.2c8e9ec2b79a0b5bd6db39fb807f13d1.js": "/roll-dice/precache-manifest.2c8e9ec2b79a0b5bd6db39fb807f13d1.js",
     "service-worker.js": "/roll-dice/service-worker.js",
     "static/css/main.d84f101d.chunk.css.map": "/roll-dice/static/css/main.d84f101d.chunk.css.map",
     "static/js/2.e46b3555.chunk.js.LICENSE.txt": "/roll-dice/static/js/2.e46b3555.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.41b538a6.js",
     "static/js/2.e46b3555.chunk.js",
     "static/css/main.d84f101d.chunk.css",
-    "static/js/main.3c169280.chunk.js"
+    "static/js/main.9e2a0db7.chunk.js"
   ]
 }
