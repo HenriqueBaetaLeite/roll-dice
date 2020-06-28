@@ -10,7 +10,8 @@ const Footer = () => (
         rel="noopener noreferrer nofollow"
       >
         Henrique Baêta Leite
-      </a>
+      </a>{' '}
+      - 2020
     </p>
   </footer>
 );
