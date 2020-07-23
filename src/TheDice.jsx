@@ -5,17 +5,16 @@ import D20 from './d20.gif';
 export default class TheDice extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       numberDice: undefined,
       imgDice: undefined,
       disableButton: false,
     };
     this.time = '';
-
-    this.rollDice = this.rollDice.bind(this);
   }
 
-  rollDice() {
+  rollDice = () => {
     clearTimeout(this.time);
     const number = Math.round(Math.random() * (this.props.diceSide - 1) + 1);
     this.setState((prevState) => ({ ...prevState, disableButton: true, numberDice: undefined }));
@@ -26,7 +25,7 @@ export default class TheDice extends Component {
     this.time = setTimeout(() => {
       this.setState({ numberDice: undefined });
     }, 10000);
-  }
+  };
 
   render() {
     const { diceSide } = this.props;
