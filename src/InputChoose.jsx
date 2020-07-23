@@ -16,7 +16,6 @@ export const InputChoose = () => {
         <select
           className="selectInput"
           onChange={(e) => setDice(Number(e.target.value))}
-          name="diceSide"
           id="diceSide"
         >
           {sides.map((side) => (

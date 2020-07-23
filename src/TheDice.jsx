@@ -1,5 +1,4 @@
-import React from 'react';
-import { Component } from 'react';
+import React, { Component } from 'react';
 import D20 from './d20.gif';
 
 export default class TheDice extends Component {
@@ -17,7 +16,7 @@ export default class TheDice extends Component {
   rollDice = () => {
     clearTimeout(this.time);
     const number = Math.round(Math.random() * (this.props.diceSide - 1) + 1);
-    this.setState((prevState) => ({ ...prevState, disableButton: true, numberDice: undefined }));
+    this.setState({ disableButton: true, numberDice: undefined });
     this.setState({ imgDice: <img src={D20} width="70px" alt="dice GIF" /> });
     setTimeout(() => {
       this.setState({ imgDice: undefined, numberDice: number, disableButton: false });
