@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/roll-dice/precache-manifest.351c5b2459c946e19eec80ef7091cc4a.js"
+  "/roll-dice/precache-manifest.dc6228e277ea0cddba505843f1011e6c.js"
 );
 
 self.addEventListener('message', (event) => {
